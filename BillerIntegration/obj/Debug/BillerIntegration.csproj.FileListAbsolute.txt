@@ -1,0 +1,11 @@
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\BillerIntegration.dll.config
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\BillerIntegration.dll
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\BillerIntegration.pdb
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\DataAccess.dll
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\MFEP.Common.Security.dll
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\MFEP.Common.Utilities.dll
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\MFEP.ProjectHelpers.Helpers.dll
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\bin\DataAccess.pdb
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\obj\Debug\BillerIntegration.csprojResolveAssemblyReference.cache
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\obj\Debug\BillerIntegration.dll
+E:\Work\SKELEton\24.4.2018\BillerIntegration\BillerIntegration\obj\Debug\BillerIntegration.pdb

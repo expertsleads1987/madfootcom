@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2D4302E-53AF-4F2E-8AAD-180A485DB182}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MFEP.Common.Security">
+      <HintPath>..\BillerIntegration\Ref\MFEP.Common.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MFEP.Common.Utilities">
+      <HintPath>..\BillerIntegration\Ref\MFEP.Common.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="MFEP.ProjectHelpers.Helpers">
+      <HintPath>..\BillerIntegration\Ref\MFEP.ProjectHelpers.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL.cs" />
+    <Compile Include="EntityFramework\AccInfo.cs" />
+    <Compile Include="EntityFramework\AccountInfoOld.cs" />
+    <Compile Include="EntityFramework\BillerRecord.cs" />
+    <Compile Include="EntityFramework\BillInquiryRequestEntityUpdated.cs" />
+    <Compile Include="EntityFramework\BillPaymentUpdated.cs" />
+    <Compile Include="EntityFramework\BillPullResponse.cs" />
+    <Compile Include="EntityFramework\BillRec.cs" />
+    <Compile Include="EntityFramework\BillRecordUpdated.cs" />
+    <Compile Include="EntityFramework\BillsRecordUpdated.cs" />
+    <Compile Include="EntityFramework\BillStatusCodeUpdated.cs" />
+    <Compile Include="EntityFramework\BillType.cs" />
+    <Compile Include="EntityFramework\Body.cs" />
+    <Compile Include="EntityFramework\ClientMessageInspector.cs" />
+    <Compile Include="EntityFramework\CustomField.cs" />
+    <Compile Include="EntityFramework\DateRangeEntity.cs" />
+    <Compile Include="EntityFramework\Footer.cs" />
+    <Compile Include="EntityFramework\Headers.cs" />
+    <Compile Include="EntityFramework\MessageHeader.cs" />
+    <Compile Include="EntityFramework\MFEP.cs" />
+    <Compile Include="EntityFramework\MFEPFooterOld.cs" />
+    <Compile Include="EntityFramework\MFEPHeaderOld.cs" />
+    <Compile Include="EntityFramework\MFEPMessageOld.cs" />
+    <Compile Include="EntityFramework\PaymentNotificationEntityUpdated.cs" />
+    <Compile Include="EntityFramework\PaymentStatus.cs" />
+    <Compile Include="EntityFramework\PmtConstUpdated.cs" />
+    <Compile Include="EntityFramework\PmtCost.cs" />
+    <Compile Include="EntityFramework\ProcessesCodesUpdated.cs" />
+    <Compile Include="EntityFramework\RequestAcctInfo.cs" />
+    <Compile Include="EntityFramework\RequestMessageSecurity.cs" />
+    <Compile Include="EntityFramework\RequestMFEP.cs" />
+    <Compile Include="EntityFramework\RequestMsgBody.cs" />
+    <Compile Include="EntityFramework\RequestMsgFooter.cs" />
+    <Compile Include="EntityFramework\RequestMsgHeader.cs" />
+    <Compile Include="EntityFramework\RequestTrsInf.cs" />
+    <Compile Include="EntityFramework\ResultCoreBusniess.cs" />
+    <Compile Include="EntityFramework\ResultUpdated.cs" />
+    <Compile Include="EntityFramework\SecurityOld.cs" />
+    <Compile Include="EntityFramework\SecurityVal.cs" />
+    <Compile Include="EntityFramework\SequenceNumber.cs" />
+    <Compile Include="EntityFramework\SeverityUpdated.cs" />
+    <Compile Include="EntityFramework\SubPaymentUpdated.cs" />
+    <Compile Include="EntityFramework\SubPmts.cs" />
+    <Compile Include="EntityFramework\TransmitInfoOld.cs" />
+    <Compile Include="EntityFramework\TrsInf.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EntityFramework\favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

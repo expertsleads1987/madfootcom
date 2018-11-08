@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Connection-Web.config Connection String" description="Connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.10.9)(PORT=1251)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=dv10g)));User Id=billmain;Password=billmain;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\BillerIntegration\\BillerIntegration\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Connection']/@connectionString" />
+  </parameter>
+</parameters>
